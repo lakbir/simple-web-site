@@ -1,0 +1,92 @@
+<?php require_once("res/x5engine.php"); ?><!DOCTYPE html><!-- HTML5 -->
+<html lang="fr-FR" dir="ltr">
+	<head>
+		<title>Recherche - E-Business</title>
+		<meta charset="utf-8" />
+		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
+		<meta name="generator" content="Incomedia WebSite X5 Professional 11.0.2.14 - www.websitex5.com" />
+		<meta name="viewport" content="width=920" />
+		<link rel="stylesheet" type="text/css" href="style/reset.css" media="screen,print" />
+		<link rel="stylesheet" type="text/css" href="style/print.css" media="print" />
+		<link rel="stylesheet" type="text/css" href="style/style.css" media="screen,print" />
+		<link rel="stylesheet" type="text/css" href="style/template.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="style/menu.css" media="screen" />
+		<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="style/ie.css" media="screen" /><![endif]-->
+		
+		<script type="text/javascript" src="res/jquery.js?14"></script>
+		<script type="text/javascript" src="res/x5engine.js?14"></script>
+		<script type="text/javascript">
+			x5engine.boot.push(function () { x5engine.bgStretch('style/bg.jpg', true, 0); });
+		</script>
+		
+	</head>
+	<body>
+		<div id="imHeaderBg"></div>
+		<div id="imFooterBg"></div>
+		<div id="imPage">
+			<div id="imHeader">
+				<h1 class="imHidden">Recherche - E-Business</h1>
+				
+				<div id="imSlideshowContent_3" style="position: absolute; top: -9px; left: 233px; width: 724px; height: 368px;"><div id="imFlashContainer_3"></div></div><script type="text/javascript">var imTemplateSlideShow_3_settings = {'target': '#imSlideshowContent_3', 'width': 724, 'height': 368, 'autoplay': true, 'random': false, 'thumbsPosition': 'none', 'disableTouch': true, 'loadingImage': 'res/imLoad.gif', 'showButtons': false, 'backgroundColor': 'transparent', 'media': [{'width': 724,'height': 368,'type': 'image','url': 'gallery/050115_splash_sale_CTAs_3_FRnew.png','autoplayTime': 5000,'effect': 'scramble'},{'width': 724,'height': 368,'type': 'image','url': 'gallery/130115_splash_stylesteals_FR_1_NEW.png','autoplayTime': 5000,'effect': 'verticalSlices'},{'width': 724,'height': 368,'type': 'image','url': 'gallery/120115_splash_fit_637x320_1FR.png','autoplayTime': 4000,'effect': 'squares'}]}; x5engine.boot.push('x5engine.gallery(imTemplateSlideShow_3_settings)');</script>
+				<div class="search_form" style="position: absolute; top: 190px; left: 0px; width: 205px;"><form id="imSearch_4" action="imsearch.php" method="get" style="white-space: nowrap"><fieldset><input type="text" name="search" value="" style="width: 104px; line-height: 21px; font: normal normal normal 8pt Tahoma; color: #000000; background-color: #FFFFFF; background-image: url('res/imsearch.png'); background-position: 2px center; background-repeat: no-repeat; padding: 3px 3px 3px 21px; margin: 0; border: 1px solid #000000; vertical-align: middle; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;" /><span onclick="$('#imSearch_4').submit();" style="height: 21px; font: normal normal normal 8pt Tahoma; color: #000000; color: #000000; background-color: #D3D3D3; margin-left: 6px; padding: 3px 6px 3px 6px; border: 1px solid #000000; vertical-align: middle; cursor: pointer; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">Rechercher</span></fieldset></form></div>
+			</div>
+			<a class="imHidden" href="#imGoToCont" title="Aller au menu de navigation">Aller au contenu</a>
+			<a id="imGoToMenu"></a><p class="imHidden">Menu principal :</p>
+			<div id="imMnMn" class="auto">
+				<ul class="auto">
+					<li id="imMnMnNode0" class="imMnMnFirst">
+						<a href="index.html">
+							<span class="imMnMnFirstBg">
+								<span class="imMnMnTxt"><span class="imMnMnImg"></span>Page d&#39;accueil</span>
+							</span>
+						</a>
+					</li><li id="imMnMnNode7" class="imMnMnMiddle">
+						<a href="lookbook.html">
+							<span class="imMnMnFirstBg">
+								<span class="imMnMnTxt"><span class="imMnMnImg"></span>LOOKBOOK</span>
+							</span>
+						</a>
+					</li><li id="imMnMnNode3" class="imMnMnMiddle">
+						<a href="femmes.html">
+							<span class="imMnMnFirstBg">
+								<span class="imMnMnTxt"><span class="imMnMnImg"></span>FEMMES</span>
+							</span>
+						</a>
+					</li><li id="imMnMnNode4" class="imMnMnMiddle">
+						<a href="hommes.html">
+							<span class="imMnMnFirstBg">
+								<span class="imMnMnTxt"><span class="imMnMnImg"></span>HOMMES</span>
+							</span>
+						</a>
+					</li><li id="imMnMnNode8" class="imMnMnLast">
+						<a href="commander.html">
+							<span class="imMnMnFirstBg">
+								<span class="imMnMnTxt"><span class="imMnMnImg"></span>COMMANDER</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="imContentGraphics"></div>
+			<div id="imContent">
+				<a id="imGoToCont"></a>
+				<h2 id="imPgTitle">Résultat(s) de la recherche</h2><?php
+$search = new imSearch();
+$keys = isset($_GET['search']) ? $_GET['search'] : "";
+$page = isset($_GET['page']) ? $_GET['page'] : 0;
+$type = isset($_GET['type']) ? $_GET['type'] : "pages"; ?>
+<div class="searchPageContainer">
+<?php echo $search->search($keys, $page, $type); ?>
+</div>
+				  
+				<div class="imClear"></div>
+			</div>
+			<div id="imFooter">
+				
+			</div>
+		</div>
+		<span class="imHidden"><a href="#imGoToCont" title="Relire le contenu de la page">Retourner au contenu</a> | <a href="#imGoToMenu" title="Naviguer encore dans le site">Retourner au menu</a></span>
+		
+		<noscript class="imNoScript"><div class="alert alert-red">Pour utiliser ce site vous devez activer JavaScript</div></noscript>
+	</body>
+</html>
